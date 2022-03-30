@@ -33,8 +33,7 @@ vector<string> generateParenthesis(int n)
 }
 int main()
 {
-    vector<string>
-        ff; 
+    vector<string>ff; 
     int n = 5;
     ff = generateParenthesis(n); 
  
