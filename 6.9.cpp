@@ -15,8 +15,7 @@ vector<string> generateParenthesis(int n)
         return two;
     } 
  
-    two = generateParenthesis(
-        n - 1);
+    two = generateParenthesis(n - 1);
         
     for (int i = 0; i < two.size(); i++) {
         string buf = "{", bug = "{", bus = "{";
