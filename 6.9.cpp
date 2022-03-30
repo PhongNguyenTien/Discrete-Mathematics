@@ -1,6 +1,8 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
+
 vector<string> generateParenthesis(int n)
 {
     vector<string> two;
@@ -30,14 +32,19 @@ vector<string> generateParenthesis(int n)
     ans.pop_back();
     return ans;
 }
-int main()
-{
-    vector<string>ff; 
+
+int main(){
     int n;
     cin >> n;
-    ff = generateParenthesis(n); 
- 
-    for (int i = 0; i < ff.size(); ++i) {
-        cout << ff[i] << endl;
+    
+    for (int i = 1; i <= n; i++){
+        vector<string>ff; 
+        ff = generateParenthesis(i); 
+        
+    for (int j = 0; j < ff.size(); ++j) {
+        cout << ff[j] << endl;
+        }
     }
+    
+    return 0;
 }
