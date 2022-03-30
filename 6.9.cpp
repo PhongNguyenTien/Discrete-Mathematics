@@ -34,7 +34,8 @@ vector<string> generateParenthesis(int n)
 int main()
 {
     vector<string>ff; 
-    int n = 5;
+    int n;
+    cin >> n;
     ff = generateParenthesis(n); 
  
     for (int i = 0; i < ff.size(); ++i) {
