@@ -40,11 +40,9 @@ int main(){
     for (int i = 1; i <= n; i++){
         vector<string>ff; 
         ff = generateParenthesis(i); 
-        
-    for (int j = 0; j < ff.size(); ++j) {
-        cout << ff[j] << endl;
+        for (int j = 0; j < ff.size(); ++j) {
+            cout << ff[j] << endl;
+            }
         }
-    }
-    
     return 0;
-}
+   }
