@@ -29,7 +29,7 @@ vector<string> generateParenthesis(int n)
         ans.push_back(bug);
     }
  
-    ans.pop_back();
+    ans.pop_back(" ");
     return ans;
 }
 
