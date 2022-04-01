@@ -29,7 +29,7 @@ vector<string> generateParenthesis(int n)
         ans.push_back(bug);
     }
  
-    ans.pop_back(" ");
+    ans.pop_back();
     return ans;
 }
 
@@ -37,6 +37,7 @@ int main(){
     int n;
     cin >> n;
     
+    cout << " ";
     for (int i = 1; i <= n; i++){
         vector<string>ff; 
         ff = generateParenthesis(i); 
@@ -44,5 +45,6 @@ int main(){
             cout << ff[j] << endl;
             }
         }
+    
     return 0;
    }
